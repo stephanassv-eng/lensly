@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lensly | Discover the World</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="brand">
+            <h1>Lensly<span>.</span></h1>
+            <p>Discover the world, one search at a time.</p>
+        </div>
+
+        <form id="search-form">
+            <label for="search-input">Search for images</label>
+            <div class="search-box">
+                <input
+                    type="search"
+                    id="search-input"
+                    placeholder="Try mountains, nature, architecture..."
+                >
+                <button type="submit" id="search-button">Search</button>
+            </div>
+        </form>
+    </header>
+
+    <main>
+        <section class="explore">
+            <h2>Explore inspiration</h2>
+
+            <div class="categories">
+                <button type="button">Nature</button>
+                <button type="button">Architecture</button>
+                <button type="button">Animals</button>
+                <button type="button">Travel</button>
+            </div>
+        </section>
+
+        <section class="gallery">
+            <div class="gallery-heading">
+                <h2>Your discoveries</h2>
+                <p id="result-count">Your results will appear here</p>
+            </div>
+
+            <div id="results"></div>
+
+            <p id="empty-state">
+                ✨ Search for something beautiful to get started.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Made with curiosity by Stephanas · Lensly © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
